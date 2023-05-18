@@ -2,8 +2,8 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>頑張らない3D表現</title>
+    <meta name="viewport" content="width=640, initial-scale=1.0" />
+    <title>WebGLを使わない3D表現</title>
     <link rel="stylesheet" href="/assets/style/style.scss" />
     <script type="module" src="/assets/js/script.ts"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,7 +20,7 @@
   <body>
     <div class="globalWrapper">
       <section>
-        <h2 class="sectionTitle">素材を3Dにする</h2>
+        <h2 class="sectionTitle" id="material3d">素材を3Dにする</h2>
         <div class="donutsWrapper">
           <div class="donutsText">
             <h3>ドーナツ</h3>
@@ -37,7 +37,9 @@
         </div>
       </section>
       <section>
-        <h2 class="sectionTitle">CSS Transform3Dで演出する</h2>
+        <h2 class="sectionTitle" id="cssTransform">
+          CSS Transform3Dで演出する
+        </h2>
         <div class="solarWrapper">
           <div class="solarSystem">
             <div class="solarSystemBg">
@@ -81,7 +83,7 @@
         </div>
       </section>
       <section>
-        <h2 class="sectionTitle">レイヤーを用いて3D感を出す</h2>
+        <h2 class="sectionTitle" id="layer">レイヤーを用いて3D感を出す</h2>
         <div class="skyWrapper">
           <div class="sky">
             <div class="cloud cloud1 cloudLayer1">☁️</div>
@@ -142,7 +144,7 @@
         </small>
       </section>
       <section>
-        <h2 class="sectionTitle">影を用いて立体風にする</h2>
+        <h2 class="sectionTitle" id="shadow">影を用いて立体風にする</h2>
         <div class="ballWrapper">
           <div class="ball emoji">⚽</div>
           <img
@@ -163,7 +165,7 @@
         </div>
       </section>
       <section>
-        <h2 class="sectionTitle">組み合わせて使う</h2>
+        <h2 class="sectionTitle" id="combo">組み合わせて使う</h2>
         <div class="polygon swiper">
           <div class="swiper-wrapper">
             <div class="polygonSlide swiper-slide">

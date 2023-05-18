@@ -12,6 +12,10 @@
   --easeInQuint: cubic-bezier(0.64, 0, 0.78, 0);
 }
 
+html {
+  scroll-padding-top: 32px;
+}
+
 body {
   font-family: sans-serif;
 }

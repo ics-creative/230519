@@ -7,7 +7,7 @@
     "preview": "vite preview",
     "prettier": "prettier \"**/*.{css,scss,ts,js,html}\" --write",
     "stylelint": "stylelint --fix src/assets/style/*.scss",
-    "format": "yarn run prettier && yarn run stylelint"
+    "format": "pnpm run prettier && pnpm run stylelint"
   },
   "author": "ics-nishihara <nishihara@ics-web.jp>",
   "license": "MIT",
