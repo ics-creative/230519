@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>頑張らない3D表現</title>
+    <link rel="stylesheet" href="/assets/style/style.scss" />
+    <script type="module" src="/assets/js/script.ts"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="globalWrapper">
+      <section>
+        <h2 class="sectionTitle">素材を3Dにする</h2>
+        <div class="donutsWrapper">
+          <div class="donutsText">
+            <h3>ドーナツ</h3>
+            <p>
+              ドーナツは、小麦粉、砂糖、卵、水、バター、イーストなどの材料を混ぜて作った生地を油で揚げた菓子です。リング状のものが多いですが、ボール状や棒状のものもあります。
+            </p>
+          </div>
+          <div class="donutsMovie">
+            <video muted playsinline autoplay loop width="360" height="360">
+              <source src="/assets/movies/donut.mov" type="video/quicktime" />
+              <source src="/assets/movies/donut.webm" type="video/webm" />
+            </video>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="sectionTitle">CSS Transform3Dで演出する</h2>
+        <div class="solarWrapper">
+          <div class="solarSystem">
+            <div class="solarSystemBg">
+              <img
+                src="/assets/images/solarSystemBg.jpg"
+                alt=""
+                width="960"
+                height="640"
+              />
+            </div>
+            <div class="sun emoji">🌞</div>
+            <div class="earthSystem">
+              <div class="earth emoji">🌏</div>
+              <div class="moon emoji">🌕</div>
+            </div>
+          </div>
+        </div>
+        <small>
+          Credit: Photo by
+          <a
+            href="https://unsplash.com/fr/@von_co?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Ivana Cajina</a
+          >
+          on
+          <a
+            href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/asuyh-_ZX54?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </small>
+      </section>
+      <section>
+        <div class="layeredTextView">
+          <div class="layeredTextWrapper">
+            <div class="layeredText">メロスは激怒した</div>
+            <div class="layeredText" role="presentation">メロスは激怒した</div>
+            <div class="layeredText" role="presentation">メロスは激怒した</div>
+            <div class="layeredText" role="presentation">メロスは激怒した</div>
+            <div class="layeredText" role="presentation">メロスは激怒した</div>
+            <div class="layeredText" role="presentation">メロスは激怒した</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="sectionTitle">レイヤーを用いて3D感を出す</h2>
+        <div class="skyWrapper">
+          <div class="sky">
+            <div class="cloud cloud1 cloudLayer1">☁️</div>
+            <div class="cloud cloud2 cloudLayer2">☁️</div>
+            <div class="cloud cloud3">☁️</div>
+            <div class="cloud cloud4 cloudLayer2">☁️</div>
+            <div class="cloud cloud5 cloudLayer3">☁️</div>
+            <div class="cloud cloud6 cloudLayer1">☁️</div>
+            <div class="cloud cloud7">☁️</div>
+            <div class="cloud cloud8">☁️</div>
+            <div class="cloud cloud9 cloudLayer2">☁️</div>
+            <div class="cloud cloud10 cloudLayer1">☁️</div>
+            <div class="cloud cloud11 cloudLayer3">☁️</div>
+            <div class="cloud cloud12 cloudLayer2">☁️</div>
+            <div class="cloud cloud13">☁️</div>
+            <div class="cloud cloud14 cloudLayer1">☁️</div>
+            <div class="cloud cloud15">☁️</div>
+            <div class="cloud cloud16 cloudLayer2">☁️</div>
+          </div>
+        </div>
+        <p>スクロールしてください</p>
+      </section>
+      <section>
+        <div class="snowImageWrapper">
+          <img
+            src="/assets/images/gokayama3.webp"
+            width="720"
+            height="480"
+            class="snowFallingBg snowFallingBgLayer3"
+          />
+          <img
+            src="/assets/images/gokayama2.webp"
+            width="720"
+            height="480"
+            class="snowFallingBg snowFallingBgLayer2"
+          />
+          <img
+            src="/assets/images/gokayama1.webp"
+            width="720"
+            height="480"
+            class="snowFallingBg snowFallingBgLayer1"
+          />
+          <div class="snowFalling"></div>
+        </div>
+        <p>画像内でマウスを動かしてみてください</p>
+
+        <small
+          >Credit: Photo by
+          <a
+            href="https://unsplash.com/@mysam123?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Sam Lee</a
+          >
+          on
+          <a
+            href="https://unsplash.com/s/photos/gokayama?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </small>
+      </section>
+      <section>
+        <h2 class="sectionTitle">影を用いて立体風にする</h2>
+        <div class="ballWrapper">
+          <div class="ball emoji">⚽</div>
+          <img
+            src="/assets/images/ballShadow.png"
+            alt=""
+            width="180"
+            height="100"
+            class="ballShadow"
+          />
+        </div>
+      </section>
+      <section>
+        <div class="tileWrapper">
+          <div class="tile"></div>
+          <div class="tile big"></div>
+          <div class="tile long"></div>
+          <div class="tile wide"></div>
+        </div>
+      </section>
+      <section>
+        <h2 class="sectionTitle">組み合わせて使う</h2>
+        <div class="polygon swiper">
+          <div class="swiper-wrapper">
+            <div class="polygonSlide swiper-slide">
+              <img
+                src="/assets/images/cube.webp"
+                alt=""
+                width="256"
+                height="256"
+                class="polygonImage"
+              />
+              <img
+                src="/assets/images/ballShadow.png"
+                alt=""
+                width="180"
+                height="100"
+                class="polygonShadow"
+              />
+              <div class="polygonInfo">
+                <h3>Cube</h3>
+                <p>
+                  立方体は、6つの面がすべて正方形である多面体。立方体は正多面体の一種であり、六面体とも呼ばれる。
+                </p>
+              </div>
+            </div>
+            <div class="polygonSlide swiper-slide">
+              <img
+                src="/assets/images/cylinder.webp"
+                alt=""
+                width="256"
+                height="256"
+                class="polygonImage"
+              />
+              <img
+                src="/assets/images/ballShadow.png"
+                alt=""
+                width="180"
+                height="100"
+                class="polygonShadow"
+              />
+              <div class="polygonInfo">
+                <h3>Cylinder</h3>
+                <p>
+                  円柱とは、底面が円で、側面が長方形の立体。底面は2つあり、互いに平行で、同じ大きさである。
+                </p>
+              </div>
+            </div>
+            <div class="polygonSlide swiper-slide">
+              <img
+                src="/assets/images/ico.webp"
+                alt=""
+                width="256"
+                height="256"
+                class="polygonImage"
+              />
+              <img
+                src="/assets/images/ballShadow.png"
+                alt=""
+                width="180"
+                height="100"
+                class="polygonShadow"
+              />
+              <div class="polygonInfo">
+                <h3>Icosphere</h3>
+                <p>
+                  Ico球は、球体の表面を三角形で分割したもの。頂点が全方向に対して均一になっている。
+                </p>
+              </div>
+            </div>
+            <div class="polygonSlide swiper-slide">
+              <img
+                src="/assets/images/torus.webp"
+                alt=""
+                width="256"
+                height="256"
+                class="polygonImage"
+              />
+              <img
+                src="/assets/images/ballShadow.png"
+                alt=""
+                width="180"
+                height="100"
+                class="polygonShadow"
+              />
+              <div class="polygonInfo">
+                <h3>Torus</h3>
+                <p>
+                  トーラスは、円周をその平面内に含まれる直線の周りに1回転させたときに得られる曲面体。ドーナツの形に似ている。
+                </p>
+              </div>
+            </div>
+            <div class="polygonSlide swiper-slide">
+              <img
+                src="/assets/images/suzanne.webp"
+                alt=""
+                width="256"
+                height="256"
+                class="polygonImage"
+              />
+              <img
+                src="/assets/images/ballShadow.png"
+                alt=""
+                width="180"
+                height="100"
+                class="polygonShadow"
+              />
+              <div class="polygonInfo">
+                <h3>Suzanne</h3>
+                <p>
+                  スザンヌはBlenderに用意されている検証用モデルであり、マスコットでもある。
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="swiper-button-prev"></button>
+          <button class="swiper-button-next"></button>
+        </div>
+      </section>
+      <section>
+        <div class="map3dViewer">
+          <div class="map3d">
+            <img
+              src="/assets/images/3d_map_1.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_2.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_2.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_2.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_2.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_3.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_4.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_5.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_6.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_6.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_6.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_7.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_7.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_8.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_8.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_9.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_9.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_9.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_9.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+            <img
+              src="/assets/images/3d_map_9.png"
+              alt=""
+              width="640"
+              height="500"
+              class="map3dLayer"
+            />
+          </div>
+        </div>
+        <p>ドラッグで角度を変更できます</p>
+      </section>
+    </div>
+    <script type="module">
+      import Swiper, { Navigation } from "swiper";
+      import "swiper/css/navigation";
+      import "swiper/css";
+      // パララックス
+      const element = document.querySelector(".skyWrapper");
+      const cloudLayer1 = document.querySelectorAll(".cloudLayer1");
+      const cloudLayer2 = document.querySelectorAll(".cloudLayer2");
+      const cloudLayer3 = document.querySelectorAll(".cloudLayer3");
+
+      // 事前に各要素のoffsetTopを取得して、配列化しておく
+      const layer1OffsetList = Array.from(cloudLayer1).map(
+        (cloud) => cloud.offsetTop
+      );
+      const layer2OffsetList = Array.from(cloudLayer2).map(
+        (cloud) => cloud.offsetTop
+      );
+      const layer3OffsetList = Array.from(cloudLayer3).map(
+        (cloud) => cloud.offsetTop
+      );
+
+      // それぞれのレイヤーの移動スピード倍率
+      const LAYER1_SPEED = 0.5;
+      const LAYER2_SPEED = -0.5;
+      const LAYER3_SPEED = -1.5;
+
+      // 移動量に応じてパララックスを実行する関数
+      const moveParallax = (scrollVal) => {
+        cloudLayer1.forEach((cloud, index) => {
+          cloud.style.transform = `translateY(${
+            (scrollVal - layer1OffsetList[index]) * LAYER1_SPEED
+          }px)`;
+        });
+        cloudLayer2.forEach((cloud, index) => {
+          cloud.style.transform = `translateY(${
+            (scrollVal - layer2OffsetList[index]) * LAYER2_SPEED
+          }px)`;
+        });
+        cloudLayer3.forEach((cloud, index) => {
+          cloud.style.transform = `translateY(${
+            (scrollVal - layer3OffsetList[index]) * LAYER3_SPEED
+          }px)`;
+        });
+      };
+
+      // 初期位置セット
+      moveParallax(0);
+
+      // スクロールに応じて移動
+      element.addEventListener("scroll", () => {
+        const scrollVal = element.scrollTop;
+        moveParallax(scrollVal);
+      });
+
+      // マウスで視差効果
+      const mouseArea = document.querySelector(".snowImageWrapper");
+      const snowFalling = document.querySelector(".snowFalling");
+      const snowBg1 = document.querySelector(".snowFallingBgLayer1");
+      const snowBg2 = document.querySelector(".snowFallingBgLayer2");
+      const snowBg3 = document.querySelector(".snowFallingBgLayer3");
+
+      // マウスの移動におうじて、各要素を移動させる
+      mouseArea.addEventListener("mousemove", (e) => {
+        // ビューポート内のマウス位置と要素の位置から、要素内の相対位置を計算する。中心が原点になるように調整
+        const mouseAreaRect = mouseArea.getBoundingClientRect();
+        const posX = e.clientX - mouseAreaRect.left - mouseAreaRect.width / 2;
+        const posY = e.clientY - mouseAreaRect.top - mouseAreaRect.height / 2;
+
+        // マウス移動量に対する各要素の移動量の比率
+        const SNOW_SPEED_RATIO = 0.2;
+        const BG1_SPEED_RATIO = 0.04;
+        const BG2_SPEED_RATIO = 0.03;
+        const BG3_SPEED_RATIO = 0.025;
+        // 雪は横移動しかしない（縦移動すると降雪と干渉して不自然になるので）
+        snowFalling.style.transform = `translateX(${
+          posX * SNOW_SPEED_RATIO
+        }px)`;
+        snowBg1.style.transform = `translate(${posX * BG1_SPEED_RATIO}px, ${
+          posY * BG1_SPEED_RATIO
+        }px)`;
+        snowBg2.style.transform = `translate(${posX * BG2_SPEED_RATIO}px, ${
+          posY * BG2_SPEED_RATIO
+        }px)`;
+        snowBg3.style.transform = `translate(${posX * BG3_SPEED_RATIO}px, ${
+          posY * BG3_SPEED_RATIO
+        }px)`;
+      });
+
+      // Swiperの設定
+      new Swiper(".swiper", {
+        modules: [Navigation],
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+        speed: 800,
+      });
+
+      // 3Dマップグリグリ
+
+      // ドラッグ操作のフラグ
+      let isDragging = false;
+      const mapViewer = document.querySelector(".map3dViewer");
+      const map = document.querySelector(".map3d");
+
+      // アニメーションを停止させる関数
+      const pauseMapAnimation = () => {
+        document.querySelectorAll(".map3dLayer").forEach((layer) => {
+          layer.style.animationPlayState = "paused";
+        });
+      };
+
+      // アニメーションを再開させる関数
+      const reStartMapAnimation = () => {
+        document.querySelectorAll(".map3dLayer").forEach((layer) => {
+          layer.style.animationPlayState = "running";
+        });
+      };
+
+      // ラジアンを角度に変換する関数
+      const radianToDeg = (radian) => {
+        return (radian * 180) / Math.PI;
+      };
+
+      // クリックしたらドラッグ操作開始し、アニメーションを一時停止
+      mapViewer.addEventListener("mousedown", () => {
+        isDragging = true;
+        pauseMapAnimation();
+      });
+
+      // マウスを動かしたら座標から角度を計算する
+      mapViewer.addEventListener("mousemove", (e) => {
+        const mapRect = mapViewer.getBoundingClientRect();
+        if (!isDragging) return;
+        pauseMapAnimation();
+
+        const posX = e.clientX - mapRect.left - mapRect.width / 2;
+        const posY = e.clientY - mapRect.top - mapRect.height / 2;
+
+        // マウス操作のしきい値。2で領域端で90度になる
+        const THRESHOLD = 1.8;
+        map.style.transform = `rotateX(${radianToDeg(
+          Math.asin((-posY / mapRect.height) * THRESHOLD)
+        )}deg) rotateY(${radianToDeg(
+          Math.asin((posX / mapRect.width) * THRESHOLD)
+        )}deg)`;
+      });
+
+      // ドラッグが離れたら終わりにし、アニメーション再開
+      mapViewer.addEventListener("mouseup", () => {
+        isDragging = false;
+        reStartMapAnimation();
+      });
+    </script>
+  </body>
+</html>
