@@ -312,8 +312,7 @@ section {
 .layeredTextView {
   position: relative;
   width: 100%;
-  height: 200px;
-  margin-top: 180px;
+  height: 450px;
   perspective: 9999px;
   transform-style: preserve-3d;
   perspective-origin: 0 0;
@@ -321,6 +320,7 @@ section {
 
 .layeredTextWrapper {
   position: absolute;
+  top: 180px;
   width: 100%;
   height: 100px;
   animation-name: layeredText;
