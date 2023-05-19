@@ -693,7 +693,7 @@ section {
 
   @for $i from 0 through 20 {
     &:nth-child(#{$i}) {
-      translate: 0 #{$i * -10 + 50}px 0;
+      translate: 0 #{$i * -8 + 50}px 0;
     }
   }
 }
